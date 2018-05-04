@@ -34,15 +34,44 @@ nav {
 }
 
 #grass {
-    height: 30vh;
+    height: 25vh;
     background: #3e7e00;
 }
 
 #road {
-    height: 30vh;
+    height: 35vh;
     background: dimgrey;
     box-sizing: border-box;
     border-top: 10px solid grey;
     border-bottom: 10px solid grey;
     width: 100%
+}
+
+.lines {
+    border: 5px dashed #fff;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 45%;
+}
+
+/* Animations Below */
+
+#mario {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 3s;
+}
+
+/* Keyframes Below */
+
+@keyframes drive {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(900px)
+    }
 }
