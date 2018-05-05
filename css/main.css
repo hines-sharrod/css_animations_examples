@@ -63,13 +63,15 @@ nav {
     left: 0;
     animation-name: drive;
     animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
 }
 
 /* Keyframes Below */
 
 @keyframes drive {
     from {
-        transform: translateX(0)
+        transform: translateX(200px)
     }
     to {
         transform: translateX(900px)
