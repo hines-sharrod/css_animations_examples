@@ -60,20 +60,66 @@ nav {
 #mario {
     position: absolute;
     top: -40px;
+    left: 0px;
+    animation: drive 3s linear infinite both, jump 0.3s 1.5s ease;
+}
+
+#luigi {
+    position: absolute;
+    top: 100px;
     left: 0;
     animation-name: drive;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-fill-mode: both;
-    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.cloud {
+    position: absolute;
+}
+
+.cloud:nth-child(1) {
+    width: 200px;
+    top: 120px;
+    opacity: .5;
+    animation: wind 75s linear infinite;
+}
+
+.cloud:nth-child(2) {
+    width: 300px;
+    top: 0px;
+    animation: wind 60s linear infinite;
 }
 
 /* Keyframes Below */
 
 @keyframes drive {
     from {
-        transform: translateX(200px)
+        transform: translateX(-200px)
     }
     to {
-        transform: translateX(900px)
+        transform: translateX(2500px)
+    }
+}
+
+@keyframes wind {
+    from {
+        left: 100%
+    }
+    to {
+        left: -300px
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: -40px
+    }
+    50% {
+        top: -100px
+    }
+    100% {
+        top: -40px
     }
 }
