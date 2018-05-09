@@ -30,13 +30,15 @@ nav {
 } */
 
 #sky {
-    height: 40vh;
+    height: 44vh;
     background: skyblue;
 }
 
 #grass {
-    height: 25vh;
-    background: #3e7e00;
+    height: 21vh;
+    background: skyblue;
+    background-image: url('../img/grass.png');
+    background-repeat: repeat-x;
 }
 
 #road {
@@ -50,10 +52,11 @@ nav {
 
 .lines {
     border: 5px dashed #fff;
-    width: 100%;
+    width: 97%;
     box-sizing: border-box;
     position: absolute;
     top: 45%;
+    z-index: 1;
 }
 
 /* Animations Below */
@@ -63,18 +66,23 @@ nav {
     top: -40px;
     left: 0px;
     /* Example of Chaining animations together and the animation property short-hand */
-    animation: drive 3s linear infinite both, jump 0.3s 1.5s ease;
+    animation: drive 5s linear infinite both, jump 0.3s 1.5s ease;
+    z-index: 3;
 }
 
 #luigi {
     position: absolute;
     top: 100px;
     left: 0;
-    animation-name: drive;
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation: drive 5.1s linear both infinite;
+    z-index: 3;
+}
+
+#finishLine {
+    position: absolute;
+    right: 0;
+    height: 35vh;
+    z-index: 2;
 }
 
 .cloud {
@@ -135,6 +143,7 @@ nav {
     color: #000;
     margin: 0px auto;
     position: relative;
+    opacity: 0;
     top: -400px;
     transform-origin: 5px 5px;
 }
