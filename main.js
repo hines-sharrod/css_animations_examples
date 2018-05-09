@@ -16,5 +16,9 @@ $(document).ready(function () {
         $('#flipCardExample').show();
         $('#popUpExample, #shoppingCartExample, #marioExample').hide();
     })
+
+    $('#shopExample button').click(function () {
+        $(this).closest('li').find('img').clone().addClass('add-to-cart').appendTo('body');
+    })
 })
 

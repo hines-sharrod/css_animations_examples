@@ -214,6 +214,11 @@ nav {
     margin-top: 20px;
 }
 
+#shopExample h3 {
+    text-align: center;
+    margin: 0 auto;
+}
+
 .basket ul {
     padding: 0;
     position: relative;
@@ -241,4 +246,25 @@ nav {
 
 .basket header h1 {
     float: left;
+}
+
+.add-to-cart {
+    position: absolute;
+    top: 80px;
+    right: 80%;
+    width: 40px;
+    animation: addToCart 3s ease forwards
+}
+
+@keyframes addToCart {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        right: 40px;
+    }
 }
