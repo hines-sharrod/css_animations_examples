@@ -197,24 +197,24 @@ nav {
 
 /* Shop Page Styling */
 
-#shopExample {
+#shoppingCartExample {
     padding: 10px 20px;
     border-bottom: 1px solid #eee;
     background: #fff;
     height: 100vh;
 }
 
-#shopExample header:after {
+#shoppingCartExample header:after {
     display: block;
     content: "";
     clear: both;
 }
 
-#shopExample h1 {
+#shoppingCartExample h1 {
     margin-top: 20px;
 }
 
-#shopExample h3 {
+#shoppingCartExample h3 {
     text-align: center;
     margin: 0 auto;
 }
