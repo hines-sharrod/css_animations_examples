@@ -136,7 +136,6 @@ nav {
     margin: 0px auto;
     position: relative;
     top: -400px;
-    animation: drop 1s ease forwards, swing 2s 3s ease forwards;
     transform-origin: 5px 5px;
 }
 
@@ -153,6 +152,10 @@ nav {
 
 .input-group {
     margin: 40px auto;
+}
+
+.pop-up {
+    animation: drop 1s ease forwards, swing 2s 3s ease forwards;
 }
 
 @keyframes drop {

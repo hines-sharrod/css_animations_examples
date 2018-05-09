@@ -6,6 +6,7 @@ $(document).ready(function () {
     $('#popUpLink').click(function () {
         $('#popUpExample').show();
         $('#marioExample, #shoppingCartExample, #flipCardExample').hide();
+        $('#signUpForm').addClass('pop-up');
     })
     $('#shopLink').click(function () {
         $('#shoppingCartExample').show();
