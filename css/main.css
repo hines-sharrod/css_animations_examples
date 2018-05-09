@@ -194,3 +194,51 @@ nav {
         transform: translateY(600px) rotateZ(75deg)
     }
 }
+
+/* Shop Page Styling */
+
+#shopExample {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    height: 100vh;
+}
+
+#shopExample header:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#shopExample h1 {
+    margin-top: 20px;
+}
+
+.basket ul {
+    padding: 0;
+    position: relative;
+    top: 100px;
+}
+
+.basket li {
+    display: inline-block;
+    list-style-type: none;
+    width: 30%;
+    margin: 30px 1.5%;
+    text-align: center;
+}
+
+.basket button {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.basket header div {
+    float: right;
+    position: relative;
+    z-index: 1;
+}
+
+.basket header h1 {
+    float: left;
+}
