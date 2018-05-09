@@ -8,15 +8,14 @@
     <title>CSS Animations</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <nav class="nav justify-content-center">
-    <a class="nav-link" href="#">Mario Example</a>
-    <a class="nav-link" href="#">Shopping Cart Example</a>
-    <a class="nav-link" href="#">Pop-up Example</a>
+    <a id="marioLink" class="nav-link" href="#">Mario Example</a>
+    <a id="popUpLink" class="nav-link active" href="#">Pop-up Example</a>
+    <a id="shopLink" class="nav-link" href="#">Shopping Cart Example</a>
+    <a id="flipCardLink" class="nav-link" href="#">Flipping Cards Example</a>
 </nav>
 
 <body>
@@ -38,8 +37,26 @@
                 <img id="luigi" src="./img/luigi.png">
             </div>
         </div>
+
+        <div id="popUpExample" class="row">
+            <div class="col-sm-4 col-sm-offset-4" id="signUpForm">
+                <h1>Sign Up to Keep Informed!</h1>
+                <p>Join the mailing list to receive emails about you favorite topic!</p>
+                <div class="input-group col-sm-6">
+                    <input type="text" class="form-control" placeholder="Enter your email..." aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text btn btn-success" id="basic-addon2">Submit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="./main.js"></script>
 
 </html>

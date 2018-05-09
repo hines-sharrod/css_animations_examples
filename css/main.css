@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     overflow: hidden;
     margin: 0;
+    background: #000;
 }
 
 nav {
@@ -61,6 +62,7 @@ nav {
     position: absolute;
     top: -40px;
     left: 0px;
+    /* Example of Chaining animations together and the animation property short-hand */
     animation: drive 3s linear infinite both, jump 0.3s 1.5s ease;
 }
 
@@ -121,5 +123,62 @@ nav {
     }
     100% {
         top: -40px
+    }
+}
+
+/* Sign Up Form Styling */
+
+#signUpForm {
+    height: 350px;
+    width: 100%;
+    background-color: bisque;
+    color: #000;
+    margin: 0px auto;
+    position: relative;
+    top: -400px;
+    animation: drop 1s ease forwards, swing 2s 3s ease forwards;
+    transform-origin: 5px 5px;
+}
+
+#signUpForm h1 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#signUpForm p {
+    font-size: 1.2em;
+    margin-top: 30px;
+    text-align: center
+}
+
+.input-group {
+    margin: 40px auto;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        transform: translateY(700px)
+    }
+    100% {
+        transform: translateY(600px);
+        opacity: 1;
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: translateY(600px) rotateZ(0deg)
+    }
+    40% {
+        transform: translateY(600px) rotateZ(90deg)
+    }
+    70% {
+        transform: translateY(600px) rotateZ(60deg)
+    }
+    100% {
+        transform: translateY(600px) rotateZ(75deg)
     }
 }
