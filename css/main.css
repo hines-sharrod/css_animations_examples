@@ -10,25 +10,6 @@ nav {
     background: #eee;
 }
 
-/* #hoverMe {
-    background: salmon;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px auto;
-    color: #fff;
-    cursor: pointer;
-    transition: background 1s, transform 1s 1s ease;
-}
-
-#hoverMe:hover {
-    background: pink;
-    transform: rotate(360deg);
-} */
-
 #sky {
     height: 44vh;
     background: skyblue;
@@ -266,5 +247,73 @@ nav {
     100% {
         opacity: 0;
         right: 40px;
+    }
+}
+
+/* Flipping Card Page Styling */
+
+#flipCardExample .wrapper {
+    margin: 40px auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+#flipCardExample h1 {
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    font-size: 48px;
+}
+
+#flipCardExample .panels {
+    list-style-type: none;
+    padding: 0;
+}
+
+#flipCardExample .panels li {
+    position: relative;
+    width: 25%;
+    margin: 0;
+    display: block;
+    box-sizing: border-box;
+    float: left
+}
+
+#flipCardExample .panels li div {
+    width: 100%;
+    padding: 50% 0;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 0;
+    cursor: pointer;
+}
+
+/* Flip Card Animations */
+
+.front {
+    position: absolute;
+}
+
+li:hover .front {
+    animation: flip 0.2s ease forwards;
+}
+
+.back {
+    transform: rotateY(90deg);
+}
+
+li:hover .back {
+    animation: flip 0.2s ease forwards reverse;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg)
+    }
+    100% {
+        transform: rotateY(90deg)
     }
 }
